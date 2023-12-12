@@ -62,7 +62,7 @@ def train_hvae(model,
                device=device,
                warmup=lambda epoch: 1.0,
                prior_weight=lambda epoch: 1.0,
-               vocab=stoi,
+               vocab={char:index for index, char in enumerate("qwertyuiopasdfghjklzxcvbnm26")},
                conditioned=False):
     """Entrena un modelo HVAE utilizando un conjunto de datos de entrenamiento.
 
