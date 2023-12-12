@@ -2,7 +2,6 @@ PIL==9.4.0
 gdown==4.6.6
 matplotlib==3.7.1
 numpy==1.23.5
-session_info==1.0.0
 torch==2.1.0+cu118
 torchvision==0.16.0+cu118
 tqdm==4.66.1
