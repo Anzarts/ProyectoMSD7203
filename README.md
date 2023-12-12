@@ -7,11 +7,11 @@ En este repo se implementa un modelo HVAE para generación de imágenes.
 
 ### Secciones
 
- - **Dataset:** se descargan las imágenes de CAPTCHA y se construyen un dataset y dataloader de Pytorch.
- - **HVAE**: módulos de Pytorch que implementan el modelo HVAE.
- - **Train Faunction**: función de entrenamiento utilizada para ajustar los modelos.
- - **Generation**: funciones para samplear y visualizar imágenes.
- - **Run Model**: carga un HVAE ya entrenado y genera una muesra de imágenes.
+ - **dataset.py:** se descargan las imágenes de CAPTCHA y se construyen un dataset y dataloader de Pytorch.
+ - **model.py**: módulos de Pytorch que implementan el modelo HVAE.
+ - **trainer.py**: función de entrenamiento utilizada para ajustar los modelos.
+ - **generate.py**: funciones para samplear y visualizar imágenes.
+ - **samplear.ipynb**: notebook carga un HVAE ya entrenado y genera una muesra de imágenes.
 
 
  ### Intrucciones
@@ -33,3 +33,13 @@ donde
  El argumento `inner_config` recibe una lista de listas como la `outer_config` para definir los bloques internos. Aquí utiliza `'convt'` para crear convoluciones traspuestas y `'upsample'` para upsamples, también se añaden skip connections, `'skip-up'` para hacer un salto y `'skip-down'` para recibirlo, acompañadas de un índice que indica qué capas conectar. Los bloques internos de inferencia y generación se construyen de forma idéntica.
 
  La clase tiene por defecto los parámetros de la configuración que fue entrenada para el sampleo.
+
+
+ Ejecutando las celdas del notebook samplear.ipynb se generan muestras de CAPTCHA por el HVAE.
+
+ 
+
+
+ Notebook de colab con todo el código (comprobado que funciona):
+
+[https://colab.research.google.com/drive/1yr8goL8xEmpubtmzAGA5QP15GLpxGQWk#scrollTo=yFrs-YMDunEh]
