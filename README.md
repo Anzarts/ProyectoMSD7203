@@ -42,4 +42,4 @@ donde
 
  Notebook de colab con todo el código (comprobado que funciona):
 
-[https://colab.research.google.com/drive/1yr8goL8xEmpubtmzAGA5QP15GLpxGQWk#scrollTo=yFrs-YMDunEh]
+https://colab.research.google.com/drive/1yr8goL8xEmpubtmzAGA5QP15GLpxGQWk#scrollTo=yFrs-YMDunEh
